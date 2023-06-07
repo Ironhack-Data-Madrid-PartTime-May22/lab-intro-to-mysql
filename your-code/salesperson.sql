@@ -11,3 +11,4 @@ VALUES (00001, 'Petey Cruiser', 'Madrid'),
 (00008, 'Shonda Leer', 'Sao Paulo');
 
 SELECT * FROM salesperson;
+
