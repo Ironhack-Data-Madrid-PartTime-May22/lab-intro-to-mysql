@@ -16,11 +16,6 @@ VALUES ('crucero petey', 'Madrid'),
 ('walter melón', 'Ámsterdam'),
 ('shonda leer', 'Sao Paulo');
 
-INSERT INTO factura (n_factura, fecha)
-VALUES (852399038, 2018-08-22),
-(731166526, 2018-12-31),
-(271135104, 2019-01-22);
-
 INSERT INTO automovil (VIN, fabricante, modelo, año, color)
 VALUES ('3K096I98581DHSNUP', 'volkswagen', 'tiguan', 2019, 'Azul'),
 ('ZM8G7BEUQZ97IH46V', 'peugeot', 'Rifter', 2019, 'Rojo'),
@@ -29,4 +24,12 @@ VALUES ('3K096I98581DHSNUP', 'volkswagen', 'tiguan', 2019, 'Azul'),
 ('DAM41UDN3CHU2WVF6', 'volvo', 'V60', 2019, 'Gris'),
 ('DAM41UDN3CHU2WVF6', 'volvo', 'V60 a campo traviesa', 2019, 'Gris');
 
-SELECT * FROM automovil;
+INSERT INTO facturas (n_factura, fecha, vendedores_idvendedores, clientes_idclientes, automovil_idautomovil)
+VALUES (852399038, '2018-08-22', 1, 1, 3),
+(731166526, '2018-12-31', 3, 1, 5),
+(271135104, '2019-01-22', 2, 2, 7);
+
+
+
+SELECT * FROM clientes;
+
